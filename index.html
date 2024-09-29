@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenithiX store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ZenithiX Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showCategory('all')">All</a></li>
+                <li><a href="#" onclick="showCategory('apps')">Apps</a></li>
+                <li><a href="#" onclick="showCategory('music')">Music</a></li>
+                <li><a href="#" onclick="showCategory('videos')">Videos</a></li>
+                <li><a href="#" onclick="showCategory('games')">Games</a></li>
+                <li><a href="#" onclick="showCategory('tools')">Tools</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-bar">
+            <input type="text" id="search-bar" placeholder="Search for files..." oninput="searchFiles()">
+        </div>
+
+        <!-- Display uploaded files -->
+        <div id="file-list" class="app-grid">
+            <!-- Files will be displayed here -->
+        </div>
+
+        <!-- View Section for App Previews -->
+        <section id="view-section" class="hidden">
+            <h2>App Viewer</h2>
+            <iframe id="app-viewer" src="" frameborder="0"></iframe>
+            <button onclick="goBack()">Go Back</button>
+        </section>
+
+        <!-- New About Section -->
+        <section id="about-section" class="hidden">
+            <h2>About the App Store</h2>
+            <p>
+                Welcome to the App Store, a platform where you can download and view apps, music, videos, and more.
+                Our mission is to provide easy access to the best apps and media in one place. 
+                Whether you're looking for the latest tools or exciting games, we've got something for everyone!
+                if you are looking to upload your own software or games our gmail is given below at contact us.
+            </p>
+            <p>
+                If you have any questions or feedback, feel free to <a href="">contact us</a>.
+            </p>
+            <button onclick="goBack()">Go Back</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 App Store. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
