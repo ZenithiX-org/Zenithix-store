@@ -1,0 +1,213 @@
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #4A0E4E, #81007F);
+  color: white;
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #FFD700;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.75em;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar button {
+  padding: 0.75em 1em;
+  background: #81007F;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar button:hover {
+  background: #4A0E4E;
+}
+
+.section-title {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #4A0E4E;
+  text-align: center;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5em;
+  padding: 0 1em;
+}
+
+.app-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.app-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.app-info {
+  padding: 1em;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.app-info h3 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.app-info p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.app-info a {
+  display: block;
+  margin-top: 1em;
+  text-decoration: none;
+  color: white;
+  background: #4A0E4E;
+  padding: 0.5em;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.app-info a.view-button {
+  background: #00BFFF; /* Different color for view button */
+  margin-bottom: 0.5em;
+}
+
+.app-info a:hover {
+  background: #81007F;
+}
+
+.app-info a.view-button:hover {
+  background: #007ACC;
+}
+
+.rating {
+  color: #FFD700;
+  margin-top: 0.5em;
+}
+
+footer {
+  background: linear-gradient(135deg, #4A0E4E, #81007F);
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* View Section */
+#view-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#view-section.hidden {
+  display: none;
+}
+
+#app-viewer {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+#view-section button {
+  padding: 0.75em 2em;
+  background-color: #81007F;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#view-section button:hover {
+  background-color: #4A0E4E;
+}
+
